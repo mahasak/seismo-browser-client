@@ -46,7 +46,18 @@ module.exports = function(grunt) {
 		browserify: {
 			dist: {
 				files: {
-					'index.js': ['src/**/*.js']
+					'client.js': ['src/**/*.js']
+				}
+			}
+		},
+
+		uglify: {
+			my_target: {
+				options: {
+					sourceMap: 'client.map.js'
+				},
+				files: {
+					'client.min.js': ['client.js']
 				}
 			}
 		}
@@ -55,7 +66,8 @@ module.exports = function(grunt) {
 	// Laoded tasks
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-browserify');
+	grunt.loadNpmTasks('grunt-contrib-uglify');
 
 	// Default task.
-	grunt.registerTask('default', ['jshint', 'browserify']);
+	grunt.registerTask('default', ['jshint', 'browserify', 'uglify']);
 };
