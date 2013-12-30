@@ -41,12 +41,21 @@ module.exports = function(grunt) {
 				}
 			},
 			js: ['src/**/*.js']
+		},
+
+		browserify: {
+			dist: {
+				files: {
+					'index.js': ['src/**/*.js']
+				}
+			}
 		}
 	});
 
 	// Laoded tasks
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-browserify');
 
 	// Default task.
-	grunt.registerTask('default', ['jshint']);
+	grunt.registerTask('default', ['jshint', 'browserify']);
 };
