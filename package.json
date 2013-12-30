@@ -1,0 +1,25 @@
+{
+  "name": "seismo-browser-client",
+  "version": "0.0.1",
+  "description": "Seismo client for browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/seismolabs/seismo-browser-client.git"
+  },
+  "keywords": [
+    "seismo",
+    "events",
+    "tracking",
+    "browser"
+  ],
+  "author": "alexander.beletsky@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seismolabs/seismo-browser-client/issues"
+  },
+  "homepage": "https://github.com/seismolabs/seismo-browser-client"
+}
