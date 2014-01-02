@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 		browserify: {
 			dist: {
 				files: {
-					'client.js': ['src/**/*.js']
+					'seismo.js': ['src/**/*.js']
 				}
 			}
 		},
@@ -54,10 +54,10 @@ module.exports = function(grunt) {
 		uglify: {
 			my_target: {
 				options: {
-					sourceMap: 'client.map.js'
+					sourceMap: 'seismo.map.js'
 				},
 				files: {
-					'client.min.js': ['client.js']
+					'seismo.min.js': ['seismo.js']
 				}
 			}
 		}
