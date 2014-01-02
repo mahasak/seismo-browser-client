@@ -1,0 +1,9 @@
+{
+  "name": "seismo",
+  "version": "0.0.1",
+  "main": "seismo.js",
+  "ignore": [
+    "test",
+    "node_modules"
+  ]
+}
