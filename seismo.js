@@ -591,6 +591,10 @@ exports.decode = exports.parse = require('./decode');
 exports.encode = exports.stringify = require('./encode');
 
 },{"./decode":2,"./encode":3}],5:[function(require,module,exports){
+window.seismo = require('./seismo');
+
+
+},{"./seismo":7}],6:[function(require,module,exports){
 var querystring = require('querystring');
 
 var query = {
@@ -608,7 +612,7 @@ var query = {
 };
 
 module.exports = query;
-},{"querystring":4}],6:[function(require,module,exports){
+},{"querystring":4}],7:[function(require,module,exports){
 var request = require('browser-request');
 var query = require('./query');
 
@@ -739,4 +743,4 @@ module.exports = function (app, options) {
 
 	return client;
 };
-},{"./query":5,"browser-request":1}]},{},[5,6])
+},{"./query":6,"browser-request":1}]},{},[5,6,7])

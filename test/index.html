@@ -1,0 +1,20 @@
+<!doctype html>
+<head>
+	<script src="../seismo.js"></script>
+	<script>
+		var options = {
+			credentials: {
+				username: 'likeastore',
+				password: 'mypass'
+			}
+		};
+
+		var client = seismo('likeastore-dev', options);
+		client.query('search', function (err, data) {
+			console.log(data);
+		});
+
+	</script>
+</head>
+<body>
+</body>
